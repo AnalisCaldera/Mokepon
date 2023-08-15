@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #b33951;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 150px;
+    background-color: #66c7f4;
+}
+.titulo {
+    color: #ca3cff;
+    font-size: 80px;
+}
+
+#mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #b33951;
+    font-size: 20px;
+    height: 480px;
+}
+
+.subtitulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: #e0afa0;
+    height: 50px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #edfbc1;
+    align-items: center;
+}
+
+input {
+    display: none;
+}
+
+.tarjeta-mokepon {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: #e0afa0;
+}
+
+.grupo-1, .grupo-2 {
+    display: flex;
+}
+
+.tarjeta-mokepon img {
+    width: 150px;
+    height: 130px;
+}
+
+.tarjeta-mokepon:hover{
+    background-color: #66c7f4;
+}
+
+input:checked + label {
+    background-color: #66c7f4;
+}
+
+.boton, #reiniciar {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-ataques  {
+    display: flex;
+    justify-content: center;
+    background-color: #edfbc1;
+    width: 1333px;
+    padding: 8px;
+}
+
+#boton-sele-mascota, #boton-reiniciar  {
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 4px solid white;
+    background: #66c7f4;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+#boton-sele-mascota:active, #boton-reiniciar:active {
+    background-color: #ca3cff;
+}
+
+#boton-fuego, #boton-agua, #boton-tierra  {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 4px solid black;
+    background: #66c7f4;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    color: white;
+}
+
+#boton-fuego  {
+    background-color: #F94C10;
+}
+#boton-agua  {
+    background-color: #35A29F;
+}
+#boton-tierra  {
+    background-color: #C8AE7D;
+}
+
+#boton-fuego:active, #boton-agua:active, #boton-tierra:active{
+    opacity: 0.6;
+}
+
+#ataque {
+    justify-content: flex-start;
+    background-color: #b33951;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensaje-juego {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    justify-content: center;
+    align-items: center;
+    background: #ca3cff;
+    margin-top: 10px;
+}
+
+.info-ataques {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    text-align: center;
+}
+
+.info-ataques-juga, .info-ataques-enem {
+    border: 4px solid #e0afa0;
+}
+
+@media (max-width: 360px){
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+    }
+
+    header{
+        align-items: center;
+        align-content: center;
+        width: 360px;
+    }
+        
+    .titulo{
+        font-size: 25px;
+    }
+    
+    #mascota{
+        display: block;
+    }
+
+    .subtitulo{
+        height: 50px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .subtitulo > h2 {
+        font-size: 20px;
+    }
+
+    .mensaje-juego{
+        display: flex;
+        width: 360px;
+    }
+
+    #resultado{
+        display: flex;
+        font-size: 15px;
+        width: 215px;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .grupo-1, .grupo-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boton-ataques{
+        width: 360px;
+    }
+
+    .boton-ataques > p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-ataques{
+        font-size: 15px;
+        grid-template-columns: 190px 190px;
+    }
+}
+
